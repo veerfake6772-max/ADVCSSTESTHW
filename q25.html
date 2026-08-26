@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f5f5;
+
+    color: #222;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+
+    height: 70px;
+
+    padding: 0 50px;
+
+    background-color: #1e293b;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+   
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+.hero {
+    height: 600px;
+
+    background-image: url("/ADVCSSTESTHW/image1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+}
+
+
+.hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    margin: 0 0 15px;
+
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 20px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+}
+
+
+
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: rgb(230, 126, 34);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(211, 84, 0);
+}
+
+
+.about {
+    padding: 70px 30px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.about h1 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    text-transform: uppercase;
+
+    
+}
+
+.about p {
+    max-width: 750px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+
+.destinations {
+    padding: 70px 40px;
+
+    text-align: center;
+}
+
+.destinations h1 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+}
+
+
+
+.destination-container {
+    display: flex;
+
+    justify-content: center;
+
+    
+
+    gap: 30px;
+}
+
+
+
+
+.card {
+    width: 300px;
+
+    height: 400px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 3px solid white;
+}
+
+
+.card1 {
+    background-image: url("/ADVCSSTESTHW/goa.jpg");
+}
+
+.card2 {
+    background-image: url("/ADVCSSTESTHW/rajasthan.jpg");
+}
+
+.card3 {
+    background-image: url("/ADVCSSTESTHW/kerala.jpg");
+}
+
+
+
+
+.card-content {
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 25px;
+
+    color: white;
+
+    text-align: left;
+}
+
+.card-content h2 {
+    margin-top: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+}
+
+
+
+
+.contact {
+    padding: 80px 30px;
+
+    background-color: #1e293b;
+
+    color: white;
+
+    text-align: center;
+}
+
+.contact h1 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    letter-spacing: 2px;
+}
+
+.contact p {
+    font-size: 18px;
+
+   
+}
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 0 25px;
+    }
+
+    .hero-content {
+        width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .destination-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        height: 550px;
+
+        background-image: url("india-mobile.jpg");
+    }
+
+    .hero-content {
+        width: 90%;
+
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .destination-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+}
+
+
+
+@media (orientation: portrait) {
+
+    .hero {
+        background-position: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+}
+
+
+@media (orientation: landscape) {
+
+    .hero {
+        background-position: center 40%;
+    }
+
+    .hero-content {
+        width: 60%;
+    }
+
+}
+        </style>
+    </head>
+    <body>
+  <nav>
+        <h2>Explore India</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+   
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Discover Incredible India</h1>
+
+            <p>
+                Explore beautiful places, experience different
+                cultures and create unforgettable memories.
+            </p>
+
+            <button>Explore Now</button>
+        </div>
+
+    </section>
+
+
+
+    <section id="about" class="about">
+
+        <h1>About Our Journey</h1>
+
+        <p>
+            India is a land of diverse cultures, traditions,
+            historical places and breathtaking landscapes.
+            Start your journey and discover something new.
+        </p>
+
+    </section>
+
+
+
+    <section id="destinations" class="destinations">
+
+        <h1>Popular Destinations</h1>
+
+        <div class="destination-container">
+
+            <div class="card card1">
+                <div class="card-content">
+                    <h2>Goa</h2>
+                    <p>Beautiful beaches and unforgettable sunsets.</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+
+
+            <div class="card card2">
+                <div class="card-content">
+                    <h2>Rajasthan</h2>
+                    <p>Discover forts, palaces and royal heritage.</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+
+
+            <div class="card card3">
+                <div class="card-content">
+                    <h2>Kerala</h2>
+                    <p>Experience peaceful backwaters and nature.</p>
+                    <button>Explore</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="contact" class="contact">
+
+        <h1>Start Your Journey</h1>
+
+        <p>
+            Plan your next adventure and explore the beauty of India.
+        </p>
+
+        <button>Contact Us</button>
+
+    </section>
+
+
+   
+
+    </body>
+</html>

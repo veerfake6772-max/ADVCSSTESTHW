@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+ 
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px;
+}
+
+
+.container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.box {
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.box1 {
+    height: 200px;
+    background-color: rgb(47, 47, 225);
+}
+
+.box2 {
+    height: 300px;
+    background-color: rgb(242, 172, 43);
+}
+
+.box3 {
+    height: 400px;
+    background-color: rgb(77, 225, 77);
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+        </style>
+    </head>
+    <body>
+      <h1>Our Services</h1>
+
+    <div class="container">
+
+        <div class="box box1">
+            <h2>Web Design</h2>
+            <p>Creating attractive and modern websites.</p>
+        </div>
+
+        <div class="box box2">
+            <h2>Web Development</h2>
+            <p>Building responsive and user-friendly websites.</p>
+        </div>
+
+        <div class="box box3">
+            <h2>App Development</h2>
+            <p>Developing mobile applications.</p>
+        </div>
+
+    </div>
+    
+    </body>
+</html>

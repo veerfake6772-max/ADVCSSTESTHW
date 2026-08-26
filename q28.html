@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(120deg, #141e30, #243b55, #1d2671, #4b1248);
+            background-size: 300% 300%;
+            animation: backgroundMove 8s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        .registration-container {
+            width: 100%;
+            max-width: 550px;
+            padding: 35px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: black;
+            transition: transform 0.5s ease;
+        }
+
+        .registration-container:hover {
+            transform: translateY(-8px) scale(1.02);
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #1d2671;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+            position: relative;
+
+        }
+
+
+        .form-group:nth-child(odd) {
+            background: #b0c0e9;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .form-group:nth-child(even) {
+            background: #e0b7c4;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .name-field::before {
+            margin-top: 3px;
+
+            content: "👤";
+        }
+
+        .email-field::before {
+            margin-top: 3px;
+
+            content: "📧";
+        }
+
+        .phone-field::before {
+            margin-top: 3px;
+
+            content: "📱";
+        }
+
+        .password-field::before {
+            margin-top: 3px;
+
+            content: "🔒";
+        }
+
+        .confirm-field::before {
+            margin-top: 3px;
+
+            content: "🔐";
+        }
+
+        .date-field::before {
+            margin-top: 3px;
+
+            content: "📅";
+        }
+
+        .field::before {
+            position: absolute;
+            left: 20px;
+            top: 43px;
+            z-index: 2;
+            transition: transform 0.3s ease;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px 15px 13px 45px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        input:hover {
+            border-color: #777;
+            transform: scale(1.02);
+        }
+
+        input:focus {
+            border-color: #1d2671;
+            background-color: #f5f7ff;
+
+            transform: translateX(5px) scale(1.02);
+        }
+
+        .gender {
+            padding: 12px;
+        }
+
+        .gender label {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        .gender input {
+            width: auto;
+            padding: 0;
+            transform: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #1d2671, #c33764);
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, letter-spacing 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-4px) scale(1.03) skewX(-2deg);
+            box-shadow: 0 10px 25px rgba(29, 38, 113, 0.4);
+            letter-spacing: 1px;
+        }
+
+       
+
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .registration-container {
+                padding: 25px 18px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="registration-container">
+        <h1>Create Account</h1>
+        <p class="subtitle"> Register now </p>
+        <form>
+            <div class="form-group field name-field"> <label for="name">Full Name</label> <input type="text" id="name"
+                    placeholder="Enter your full name" required> </div>
+            <div class="form-group field email-field"> <label for="email">Email Address</label> <input type="email"
+                    id="email" placeholder="Enter your email" required> </div>
+            <div class="form-group field phone-field"> <label for="phone">Mobile Number</label> <input type="tel"
+                    id="phone" placeholder="Enter 10 digit mobile number" pattern="[0-9]{10}" required> </div>
+            <div class="form-group gender"> <label>Gender</label> <label> <input type="radio" name="gender"
+                        value="male"> Male </label> <label> <input type="radio" name="gender" value="female"> Female
+                </label> </div>
+            <div class="form-group field date-field"> <label for="dob">Date of Birth</label> <input type="date" id="dob"
+                    required> </div>
+            <div class="form-group field password-field"> <label for="password">Password</label> <input type="password"
+                    id="password" placeholder="Create a password" required> </div>
+            <div class="form-group field confirm-field"> <label for="confirm-password"> Confirm Password </label> <input
+                    type="password" id="confirm-password" placeholder="Confirm your password" required> </div> <button
+                type="submit"> Register Now </button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

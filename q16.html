@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+         
+
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+
+
+nav {
+    background-color: grey;
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.profile {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+
+  
+}
+
+
+
+
+
+
+.dashboard {
+    display: flex;
+    gap: 25px;
+    margin: 30px;
+}
+
+.card {
+    background-color: white;
+
+    flex: 1;
+
+    padding: 25px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 35px;
+}
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
+        </style>
+    </head>
+    <body> <nav>
+        <h2>Student Dashboard</h2>
+
+        <div class="nav-links">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Courses</a>
+            <a href="">Logout</a>
+        </div>
+    </nav>
+
+
+
+    <section class="profile">
+
+        <div class="profile-info">
+           
+
+            <div>
+                <h1>Veeresh</h1>
+                <p>B.Sc. Computer Science</p>
+                <p>Student ID: 1</p>
+            </div>
+        </div>
+
+    </section>
+
+
+ 
+    <section class="dashboard">
+
+        <div class="card">
+            <h2>Courses</h2>
+            <h1>6</h1>
+            <p>Active Courses</p>
+        </div>
+
+        <div class="card">
+            <h2> Assignments</h2>
+            <h1>4</h1>
+            <p>Pending Assignments</p>
+        </div>
+
+        <div class="card">
+            <h2>Attendance</h2>
+            <h1>85%</h1>
+            <p>Overall Attendance</p>
+        </div>
+
+        <div class="card">
+            <h2>CGPA</h2>
+            <h1>8.5</h1>
+            <p>Current CGPA</p>
+        </div>
+
+    </section>    </body>
+</html>

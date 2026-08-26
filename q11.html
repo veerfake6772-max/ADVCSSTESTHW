@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    min-height: 220px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: antiquewhite;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        background-color: aquamarine;
+    }
+}
+        </style>
+</head>
+
+<body>
+
+    <h1> Menu</h1>
+
+    <div class="menu">
+
+        <div class="card">
+            <h2>Pizza</h2>
+            <p>Cheesy Italian pizza with fresh toppings.</p>
+            <h3>₹250</h3>
+        </div>
+
+        <div class="card">
+            <h2>Burger</h2>
+            <p>Juicy burger with cheese and fresh vegetables.</p>
+            <h3>₹180</h3>
+        </div>
+
+        <div class="card">
+            <h2>Pasta</h2>
+            <p>Creamy pasta with herbs and vegetables.</p>
+            <h3>₹220</h3>
+        </div>
+
+        <div class="card">
+            <h2>Sandwich</h2>
+            <p>Grilled sandwich with cheese and vegetables.</p>
+            <h3>₹150</h3>
+        </div>
+
+        <div class="card">
+            <h2>French Fries</h2>
+            <p>Crispy golden fries served with dip.</p>
+            <h3>₹120</h3>
+        </div>
+
+        <div class="card">
+            <h2>Ice Cream</h2>
+            <p>Delicious vanilla ice cream with chocolate.</p>
+            <h3>₹100</h3>
+        </div>
+
+    </div>
+
+</body>
+</html>

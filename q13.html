@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        p{
+            padding-top: 200px;
+            text-align: center;
+        }
+
+        .p1 {
+            display: none;
+        }
+
+        .p2 {
+            display: block;
+        }
+
+        .p3 {
+            display: none;
+        }
+
+        @media(max-height: 500px) {
+            body {
+                background-color: blue;
+            }
+
+            .p1 {
+                display: block;
+            }
+
+            .p2 {
+                display: none;
+            }
+
+            .p3 {
+                display: none;
+            }
+
+        }
+
+        @media(min-height:800px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            .p1 {
+                display: none;
+            }
+
+            .p2 {
+                display: none;
+            }
+
+            .p3 {
+                display: block;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">Screen Height is is Range(0-500)</p>
+    <p class="p2">Screen Height is is Range(500-800)</p>
+    <p class="p3">Screen Height is is Range(800+)</p>
+
+</body>
+
+</html>

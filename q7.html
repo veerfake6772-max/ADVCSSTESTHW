@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        nav {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .links a {
+            text-decoration: none;
+        }
+
+        h2 {
+            width: 100%;
+        }
+        .cards{
+            display: flex;
+        }
+        .card{
+            background-color: red;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+        }
+        @media (max-width: 500px){
+            .cards{
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>My Website</h2>
+        <div class="links">
+
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Register</a>
+        </div>
+    </nav>
+    <div class="cards">
+        <div class="card">Card 1
+            <p>Content Card 1</p>
+        </div>
+        <div class="card">Card 2
+            <p>Content card 2</p>
+        </div>
+        <div class="card">Card 3
+            <p>Content card 3</p>
+        </div>
+        <div class="card">Card 4
+            <p>Content card 4</p>
+        </div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>

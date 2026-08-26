@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 40px;
+            min-height: 100vh;
+
+            background: linear-gradient(120deg, blue, skyblue, rgb(16, 16, 69), rgb(145, 145, 204), rgb(141, 141, 226));
+            animation: pageGradient 5s ease infinite;
+            background-size: 300% 300%;
+        }
+
+        @keyframes pageGradient {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.10);
+            box-shadow: rgba(0, 0, 0, 0.8);
+            transition: transform 5s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-8px);
+            transform: perspective(200px) rotateY(360deg);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 20px;
+            background: white;
+            overflow: hidden;
+
+            transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+        }
+
+        table:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 5);
+        }
+
+        thead {
+            background: linear-gradient(270deg, #ff512f, #dd2476, #1e3c72, #2a5298);
+            background-size: 400% 400%;
+            animation: shiftingGradient 8s ease infinite;
+        }
+
+        @keyframes shiftingGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        th {
+            padding: 5px;
+        }
+
+        td {
+            padding: 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            text-align: center;
+            transition: transform 0.5s ease,
+                background-color 0.5s ease,
+
+                color 0.5s ease;
+        }
+
+        td:hover {
+            background: #ffffff;
+            color: #1e3c72;
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(180deg); */
+            transform: skew(30deg);
+            transform: scale(2);
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        td:nth-child(1)::before {
+            content: "🆔";
+        }
+
+        td:nth-child(2)::before {
+            content: "👤";
+        }
+
+        td:nth-child(3)::before {
+            content: "💵";
+        }
+
+        td:nth-child(4)::before {
+            content: "💻";
+        }
+
+    tr:nth-child(2){
+        background-color: rgb(146, 146, 232);
+    }
+    tr:nth-child(3){
+        background-color: rgb(63, 63, 97);
+    }
+    tr:nth-child(4){
+        background-color: rgb(50, 50, 151);
+    }
+    tr:nth-child(5){
+        background-color: rgb(4, 4, 241);
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Dept</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>101</td>
+                <td>Veer</td>
+                <td>50000</td>
+                <td>IT</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Veer</td>
+                <td>50000</td>
+                <td>IT</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Veer</td>
+                <td>50000</td>
+                <td>IT</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Veer</td>
+                <td>50000</td>
+                <td>IT</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Veer</td>
+                <td>50000</td>
+                <td>IT</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

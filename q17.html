@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+nav {
+    background-color: #111;
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.main-news {
+    height: 450px;
+
+    background-image: url("/ADVCSSTESTHW/image2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    padding: 40px;
+
+    border: 5px solid white;
+    border-radius: 15px;
+
+    color: white;
+}
+.main-content {
+    position: absolute;
+
+    bottom: 30px;
+    left: 40px;
+
+    width: 60%;
+}
+
+.main-content h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.news-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    height: 250px;
+    flex: 1;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    border: 3px solid white;
+    border-radius: 10px;
+
+    
+}
+.card-content {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: rgba(0,0,0,0.5);
+
+    color: white;
+}
+
+.card1 {
+    background-image: url("/ADVCSSTESTHW/image1.jpg");
+}
+
+.card2 {
+    background-image: url("/ADVCSSTESTHW/image2.jpg");
+}
+
+.card3 {
+    background-image: url("/ADVCSSTESTHW/image1.jpg");
+}
+.card-content h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.card-content p {
+    margin: 0;
+    
+}
+button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: red;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+
+         <nav>
+        <h1>Daily News</h1>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Politics</a>
+            <a href="#">Sports</a>
+            <a href="#">Technology</a>
+        </div>
+    </nav>
+
+
+   
+    <main>
+
+        <div class="main-news">
+
+            <div class="main-content">
+                
+
+                <h1>Technology Is Changing the Future</h1>
+
+                <p>
+                    New technology is transforming the way people
+                    work, communicate and live.
+                </p>
+
+                <button>Read More</button>
+            </div>
+
+        </div>
+
+
+        <div class="news-cards">
+
+            <div class="card card1">
+                <div class="card-content">
+                    <h2>Sports</h2>
+                    <p>India wins an exciting cricket match.</p>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <div class="card-content">
+                    <h2>Business</h2>
+                    <p>Markets show strong growth this week.</p>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <div class="card-content">
+                    <h2>Science</h2>
+                    <p>Scientists make a new discovery.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    </body>
+</html>
